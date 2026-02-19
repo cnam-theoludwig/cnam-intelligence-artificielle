@@ -1,0 +1,29 @@
+name: "ci"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-editorconfig-checker:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd" # v6.0.2
+
+      - uses: "editorconfig-checker/action-editorconfig-checker@fc46e05012a3cb292d4b1e6306f598d74ebd5458" # main
+
+      - run: "editorconfig-checker"
+
+  ci:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd" # v6.0.2
+
+      - uses: "astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b" # v7.3.0
+
+      - run: "uv sync"
+      - run: "uvx ruff check ."
+      - run: "uvx ruff format --check ."
+      - run: "uvx ty check"
