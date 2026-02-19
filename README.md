@@ -13,7 +13,7 @@ Code réalisé dans le cadre de la formation [Ingénieur en Informatique et Syst
 - [Python](https://www.python.org/) v3.14.3
 - [uv](https://docs.astral.sh)
 
-## Utilisation
+## Installation
 
 ```sh
 # Cloner le dépôt
@@ -24,16 +24,22 @@ cd cnam-intelligence-artificielle
 
 # Installer les dépendances
 uv sync
+```
+## Utilisation
 
+```sh
 # Lancer le projet
-uv run
+uv run main.py
 
 # Format
 uvx ruff format .
 
 # Lint
-uvx ruff check --fix .
+uvx ruff check .
 
 # Type-check
 uvx ty check
+
+# Tests (with coverage)
+uv run pytest --cov
 ```

@@ -4,11 +4,31 @@ version = "0.1.0"
 requires-python = "==3.14.3"
 
 [dependency-groups]
-dev = ["ruff==0.15.1", "ty==0.0.17"]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff==0.15.1",
+    "ty==0.0.17",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
 
 [tool.ruff]
 target-version = "py314"
 preview = true
+
+[tool.ruff.lint]
+select = ["ANN"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ANN"]
 
 [tool.ruff.format]
 preview = true
