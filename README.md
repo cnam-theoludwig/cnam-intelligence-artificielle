@@ -23,8 +23,9 @@ git clone git@github.com:cnam-theoludwig/cnam-intelligence-artificielle.git
 cd cnam-intelligence-artificielle
 
 # Installer les dépendances
-uv sync
+uv sync --frozen
 ```
+
 ## Utilisation
 
 ```sh
@@ -32,13 +33,13 @@ uv sync
 uv run main.py
 
 # Format
-uvx ruff format .
+uv run ruff format .
 
 # Lint
-uvx ruff check .
+uv run ruff check .
 
 # Type-check
-uvx ty check
+uv run ty check
 
 # Tests (with coverage)
 uv run pytest --cov
