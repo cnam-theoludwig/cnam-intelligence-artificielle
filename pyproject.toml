@@ -5,7 +5,7 @@ requires-python = "==3.14.3"
 dependencies = ["pillow==12.1.1"]
 
 [dependency-groups]
-dev = ["pytest==9.0.2", "pytest-cov==7.0.0", "ruff==0.15.1", "ty==0.0.17"]
+dev = ["pytest==9.0.2", "pytest-cov==7.0.0", "ruff==0.15.4", "ty==0.0.20"]
 
 [tool.uv]
 add-bounds = "exact"

@@ -12,6 +12,7 @@ Code réalisé dans le cadre de la formation [Ingénieur en Informatique et Syst
 
 - [Python](https://www.python.org/) v3.14.3
 - [uv](https://docs.astral.sh)
+- [Docker](https://www.docker.com/)
 
 ## Installation
 
@@ -39,7 +40,7 @@ uv run ruff format .
 uv run ruff check .
 
 # Type-check
-uv run ty check
+uv run ty check .
 
 # Tests (with coverage)
 uv run pytest --cov
