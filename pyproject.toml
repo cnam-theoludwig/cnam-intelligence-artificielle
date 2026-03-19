@@ -2,7 +2,12 @@
 name = "cnam-intelligence-artificielle"
 version = "1.0.0"
 requires-python = "==3.14.3"
-dependencies = ["pillow==12.1.1"]
+dependencies = [
+    "matplotlib==3.10.8",
+    "pandas==3.0.1",
+    "pillow==12.1.1",
+    "scikit-learn==1.8.0",
+]
 
 [dependency-groups]
 dev = ["pytest==9.0.2", "pytest-cov==7.0.0", "ruff==0.15.4", "ty==0.0.20"]
