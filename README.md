@@ -2,15 +2,11 @@
 
 ## À propos
 
-Code réalisé dans le cadre de la formation [Ingénieur en Informatique et Systèmes d'Information (SI), CNAM](https://www.itii-alsace.fr/formations/informatique-et-systemes-dinformation-le-cnam/), pour le module Intelligence Artificielle (IA).
-
-### Membres du groupe
-
-[Théo LUDWIG](https://gitlab.com/theoludwig)
+Code réalisé par [Théo LUDWIG](https://theoludwig.fr) dans le cadre de la formation [Ingénieur en Informatique et Systèmes d'Information (SI), CNAM](https://www.itii-alsace.fr/formations/informatique-et-systemes-dinformation-le-cnam/), pour le module Intelligence Artificielle (IA).
 
 ## Prérequis
 
-- [Python](https://www.python.org/) v3.14.3
+- [Python](https://www.python.org/) v3.12.13
 - [uv](https://docs.astral.sh)
 - [Docker](https://www.docker.com/)
 
